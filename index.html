@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/logo/logo.svg" id="logo">
+            <a href="#"><img src="img/icons/menu.svg"></a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>New Automation Tool for Your Home</h1>
+            <p id="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
+            </p>
+            <button id="projects">See Our Projects</button>
+        </div>
+        <div class="hero-image">
+            <img src="img/pictures/hero.svg">
+        </div>
+    </section>
+    <div class="container">
+        <section class="what-we-do">
+            <h2>What we do to help our client grow in digital era,</h2>
+            <div class="card">
+                <img src="img/pictures/pic_1.svg" class="pic" id="first">
+                <div class="text">
+                    <h5>Bring Technology To Your Comfrotable Home</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.</p>
+                    <a>Learn more <img src="img/icons/arrow.svg"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/pictures/pic_2.svg" class="pic" id="second">
+                <div class="text">
+                    <h5>Make Your business To Be Better Famous In Internet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.</p>
+                    <a>Learn more <img src="img/icons/arrow.svg"></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/pictures/pic_3.svg" class="pic" id="third">
+                <div class="text">
+                    <h5>Build Your Digital Product That Suitable For Your Need</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.</p>
+                    <a>Learn more <img src="img/icons/arrow.svg"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="our-clients">
+        <div class="container">
+            <div class="text">
+                <h2>Our Beloved Client</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="table">
+                <p class="logo-client" id="first-client">LOGO CLIENT 1</p>
+                <p class="logo-client" id="second-client">LOGO CLIENT 2</p>
+                <p class="logo-client" id="third-client">LOGO CLIENT 3</p>
+                <p class="logo-client" id="fourth-client">LOGO CLIENT 4</p>
+                <p class="logo-client" id="fifth-client">LOGO CLIENT 5</p>
+                <p class="logo-client" id="sixth-client">LOGO CLIENT 6</p>
+                <p class="logo-client" id="seventh-client">LOGO CLIENT 7</p>
+                <p class="logo-client" id="eighth-client">More Clients</p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="interest">
+                    <div id="invite">
+                        <h2>Interested to work with our team?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+                    <div id="talk">
+                        <button id="open-modal-btn">Let's Talk</button>
+                    </div>
+                </div>
+                <div class="modal" id="my-modal">
+                    <div class="modal-box">
+                        <a href="" onclick="return false" class="modal-close-btn" id="close-my-modal-btn">
+                            <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                    fill="#333333" />
+                                <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                            </svg>
+                        </a>
+                        <form action="" class="form" id="add-form">
+                            <h5>SEND UP MESSAGE</h5>
+                            <p>Full Name</p>
+                            <div class="input-box">
+                                <input data-required="true" type="text" class="input-field" placeholder="Your Name">
+                            </div>
+                            <p>Email</p>
+                            <div class="input-box">
+                                <input data-required="true" class="input-field" type="text" id="email" placeholder="Your Email">
+                            </div>
+                            <p>Message</p>
+                            <div class="input-box">
+                                <textarea data-required="true" type="text" class="input-field" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="send-btn">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="contacts">
+                    <ul id="in-touch">
+                        <li><img src="img/logo/logo_white.svg"></li>
+                        <li>
+                            <p class="bold">A.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p class="bold">Т.</p> 
+                            <p>+62-812-7313-4321</p>
+                        </li>
+                        <li>
+                            <p class="bold">E.</p>
+                            <p>hello.afrian@gmail.com</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><h3>About US</h3></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">How It Work With Us</a></li>
+                    </ul>
+                    <ul>
+                        <li><h3>Follow US</h3></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+                <p id="copyright">2019 © Afrianska. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/validation.js"></script>
+</body>
+</html>
