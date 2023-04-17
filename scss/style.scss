@@ -7,7 +7,7 @@ $gray: #f4f4f4;
 $blueGrad: linear-gradient(0deg, #eaf3fa 8.84%, rgba(152, 195, 232, 0) 31.12%);
 
 h1 {
-    font-family: 'Galien';
+    font-family: 'Galien', serif;
     font-size: 64px;
     line-height: 74px;
     letter-spacing: 0.04em;
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy-Medium', sans-serif;
     font-size: 36px;
     line-height: 46px;
     letter-spacing: 0.05em;
@@ -29,7 +29,7 @@ h2 {
 }
 
 h5 {
-    font-family: 'Gilroy-Medium';
+    font-family: 'Gilroy-Medium', sans-serif;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.05em;
@@ -51,8 +51,8 @@ p {
     }
 }
 
-p, a, li, h3, h4, h6 {
-    font-family: 'Gilroy';
+* {
+    font-family: 'Gilroy-Regular', sans-serif;
 }
 
 button {
@@ -549,6 +549,12 @@ footer {
     transform: scale(0);
     transition: transform .5s;
     border-radius: 10px;
+    @media (max-width: 1090px) {
+        width: 50%;
+    }
+    @media (max-width: 600px) {
+        width: 40%;
+    }
 }
 
 .modal-close-btn {
@@ -584,6 +590,11 @@ form {
         font-family: 'Gilroy-Medium', sans-serif;
         opacity: 0.4;
     }
+    p {
+        @media (max-width: 1090px) {
+            margin-bottom: 20px;
+        }
+    }
     textarea {
         height: 50px;
     }
@@ -617,6 +628,10 @@ form {
     p {
         float: center;
         margin-top: 20%;
+        @media (max-width: 600px) {
+            margin-top: 40%;
+            font-size: 15px;
+        }
     }
 }
 
