@@ -802,18 +802,19 @@ footer hr {
 .modal-box {
   position: relative;
   width: 60%;
-  padding: 45px 100px 45px 70px;
+  padding: 5px 100px 45px 70px;
   margin: 30px;
+  margin-bottom: 200px;
   z-index: 1;
   background-color: white;
   -webkit-box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
           box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   border-radius: 10px;
 }
 
@@ -848,12 +849,12 @@ form input, form textarea {
   resize: none;
   border: 1px solid #356EAD;
   border-radius: 10px;
-  padding: 21px 4%;
+  padding: 16px 4%;
   font-family: "Gilroy-Medium", sans-serif;
   opacity: 0.4;
 }
 form textarea {
-  height: 70px;
+  height: 50px;
 }
 form button {
   display: block;
@@ -868,9 +869,31 @@ form button {
 .error-label {
   display: block;
   color: #1F3F68;
+  font-family: "Gilroy-Medium";
+  font-size: 12px;
   margin-top: 10px;
-  font-family: "Gilroy";
   margin-bottom: 10px;
+}
+
+#success-box {
+  margin-top: 50%;
+  margin-bottom: 80%;
+}
+#success-box .modal-close-btn {
+  top: 10%;
+  right: 3%;
+}
+#success-box p {
+  float: center;
+  margin-top: 20%;
+}
+
+#ok {
+  padding: 15px;
+}
+
+#ok:hover {
+  padding: 15px;
 }
 
 @font-face {

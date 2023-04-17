@@ -34,7 +34,7 @@ function validation(form) {
         if (input.dataset.required == "true") {
             if (input.value == "") {
                 removeError(input);
-                createError(input, 'The field cannot be empty');
+                createError(input, '* The field cannot be empty');
                 result = false;
             }
         }
@@ -48,21 +48,29 @@ function validation(form) {
         if (textarea.dataset.required == "true") {
             if (textarea.value == "") {
                 removeError(textarea);
-                createError(textarea, 'The field cannot be empty');
+                createError(textarea, '* The field cannot be empty');
                 result = false;
             }
         }
 
     }
-
     return result;
 }
 
 document.getElementById('add-form').addEventListener('submit', function(event) {
-    event.preventDefault()
+    event.preventDefault();
 
     if (validation(this) == true) {
-        alert('The form has been verified successfully');
+        document.getElementById("my-modal").classList.remove("open");
+        document.body.style.overflow = 'visible';
+
+        document.getElementById("success").classList.add("open");
+        document.body.style.overflow = 'hidden';
+
+        document.getElementById('ok').onclick = function () {
+            form.submit();
+        }
     }
 
 })
+
